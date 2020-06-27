@@ -2,11 +2,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
+  
     <title>Delamere's Site 0.1</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
@@ -47,20 +47,20 @@
   <body>
       <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Joshua Delamere</a>
+          <a class="navbar-brand" href="{% url 'home' %}">Joshua Delamere</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Twitter</a>
+                      <a class="nav-link" href="https://twitter.com/captaindelamere">Twitter</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Resume</a>
+                      <a class="nav-link" href="{% static 'resume.pdf' %}">Resume</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
+                      <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
                   </li>
                   
               </ul>
@@ -76,8 +76,11 @@
                   <p class="lead text-muted">Hey, my name is Josh.  I am building this website so that I can learn how to make the next website and that is the website that will make me and all my evil friends rich.</p>
                   <p>
                       <a href="mailto:captaindelamere@protonmail.com" class="btn btn-primary my-2">Email</a>
+                      </p> 
+                  <img src="{% static 'meGirl.jpg' %}" height="200"/>
 
-                  </p>
+
+                  
               </div>
           </section>
 

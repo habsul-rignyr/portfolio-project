@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\portfolio"
+    "\\blog",
+    "\\blog\\templates",
+    "\\blog\\templates\\blog",
+    "\\jobs",
+    "\\jobs\\templates",
+    "\\jobs\\templates\\jobs",
+    "\\portfolio",
+    "\\portfolio\\static"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\blog\\tests.py",
   "PreviewInSolutionExplorer": false
 }
